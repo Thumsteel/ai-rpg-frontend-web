@@ -1,6 +1,6 @@
 // app.js
 // !!! DŮLEŽITÉ: Tuto URL ZMĚNÍŠ, až nasadíš Backend na Render a získáš jeho skutečnou adresu!
-const backend_url = 'https://ai-rpg-mozek-backend.onrender.com'; 
+const backend_url = 'https://ai-rpg-mozek-backend.onrender.com/api/tah'; 
 
 // Získání odkazů na HTML elementy
 const storyDiv = document.getElementById('story');
