@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text RPG Dobrodružství</title>
+    <style>
+        body { 
+            font-family: 'Georgia', serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f4f2e9; 
+            color: #333; 
+        }
+        h1 {
+            text-align: center;
+            color: #5d4037;
+            border-bottom: 2px solid #5d4037;
+            padding-bottom: 10px;
+        }
+        #story { 
+            white-space: pre-wrap; 
+            border: 1px solid #c2b280; 
+            padding: 20px; 
+            min-height: 250px; 
+            background: #fffdf7; 
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .player-status { 
+            margin-bottom: 15px; 
+            font-weight: bold; 
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #action-form {
+            display: flex;
+            gap: 10px;
+        }
+        #action-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5d4037;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temné hvozdy: Cesta cechu</h1>
+
+    <div class="player-status">
+        Zdraví: <span id="hp">100</span> | Inventář: <span id="inventory">Nic</span>
+    </div>
+
+    <div id="story">
+        Načítám hru a čekám na instrukce od Dungeon Mastera (AI)...
+    </div>
+
+    <form id="action-form">
+        <input type="text" id="action-input" placeholder="Co uděláš? Napiš svou akci zde..." required>
+        <button type="submit">Odeslat Tah</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
